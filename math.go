@@ -13,3 +13,5 @@ func main() {
 	fmt.Println(math.Min(10, 11)) // dibulatkan minimal
 
 }
+
+// 67
