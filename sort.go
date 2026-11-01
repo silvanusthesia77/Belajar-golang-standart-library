@@ -15,17 +15,16 @@ func (s UserSlice) Len() int {
 	return len(s)
 }
 func (s UserSlice) Less(i, j int) bool {
-	return s[i].Age > s[j].Age
+	return s[i].Age < s[j].Age
 }
 func (s UserSlice) Swap(i, j int) {
 	s[i], s[j] = s[j], s[i]
 }
 func main() {
 	Users := []User{
-		{"Biba", 20},
-		{"Junior", 21},
-		{"thby", 22},
-		{"Luiz", 23},
+		{"Bibba", 20},
+		{"Junior", 22},
+		{"Thoby", 24},
 	}
 	sort.Sort(UserSlice(Users))
 	fmt.Println(Users)
